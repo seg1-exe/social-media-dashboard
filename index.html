@@ -13,30 +13,35 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  
+  <script src="./main.js" defer></script>
   <title>Frontend Mentor | [Challenge Name Here]</title>
 </head>
 <body>
-  <div id="app">
-    <div class="top">
+  <div id="app" class="dark-mode-bg">
+    <div class="top dark-mode-top-bg">
       <div class="left-top">
-        <h1>Social Media Dashboard</h1>
+        <h1 class="dark-mode-title">Social Media Dashboard</h1>
         <h2>Total Followers: 23,004</h2>
       </div>
+      <span class="hidden mobile-bar"></span>
       <div class="right-top">
         <p>Dark Mode</p>
-        <input></input>
+        <label class="switch slider-dark">
+          <input id="mode-switch" type="checkbox">
+          <span class="slider round"></span>
+        </label>
       </div>
     </div>
     
-    <div class="followers-cards">
+    <div class="followers-cards dark-mode-card-bg">
       <div class="follow-card" id="facebook-card">
+        <span class="color-bar"></span>
         <div class="card-top">
           <img src="./images/icon-facebook.svg">
           <h3>@nathanf</h3>
         </div>
         <div class="card-main">
-          <h1>1987</h1>
+          <h1 class="dark-mode-title">1987</h1>
           <h2>Followers</h2>
         </div>
         <div class="card-bottom">
@@ -46,12 +51,13 @@
       </div>
   
       <div class="follow-card" id="twitter-card">
+        <span class="color-bar"></span>
         <div class="card-top">
           <img src="./images/icon-twitter.svg">
           <h3>@nathanf</h3>
         </div>
         <div class="card-main">
-          <h1>1044</h1>
+          <h1 class="dark-mode-title">1044</h1>
           <h2>Followers</h2>
         </div>
         <div class="card-bottom">
@@ -61,12 +67,13 @@
       </div>
   
       <div class="follow-card" id="instagram-card">
+        <span class="color-bar"></span>
         <div class="card-top">
           <img src="./images/icon-instagram.svg">
           <h3>@realnathanf</h3>
         </div>
         <div class="card-main">
-          <h1>11k</h1>
+          <h1 class="dark-mode-title">11k</h1>
           <h2>Followers</h2>
         </div>
         <div class="card-bottom">
@@ -76,12 +83,13 @@
       </div>
   
       <div class="follow-card" id="youtube-card">
+        <span class="color-bar"></span>
         <div class="card-top">
           <img src="./images/icon-youtube.svg">
           <h3>Nathan F.</h3>
         </div>
         <div class="card-main">
-          <h1>8239</h1>
+          <h1 class="dark-mode-title">8239</h1>
           <h2>Followers</h2>
         </div>
         <div class="card-bottom">
@@ -94,15 +102,18 @@
     <div class="overview-cards">
       <h1>Overview - Today</h1>
   
-      <div class="overview-cards-container">
+      <div class="overview-cards-container dark-mode-card-bg">
         <div class="overview-card div1">
           <div class="overview-top">
             <p>Page Views</p>
             <img src="./images/icon-facebook.svg">
           </div>
           <div class="overview-bottom">
-            <h2>87</h2>
-            <p class="positive"><img class="positive" src="./images/icon-up.svg">3%</p>
+            <h2 class="dark-mode-title">87</h2>
+            <div>
+              <img class="positive" src="./images/icon-up.svg">
+              <p class="positive">3%</p>
+            </div>
           </div>
         </div>
     
@@ -112,8 +123,11 @@
             <img src="./images/icon-facebook.svg">
           </div>
           <div class="overview-bottom">
-            <h2>52</h2>
-            <p class="negative"><img class="negative" src="./images/icon-down.svg">2%</p>
+            <h2 class="dark-mode-title">52</h2>
+            <div>
+              <img class="negative" src="./images/icon-down.svg">
+              <p class="negative">2%</p>
+            </div>
           </div>
         </div>
     
@@ -123,8 +137,11 @@
             <img src="./images/icon-instagram.svg">
           </div>
           <div class="overview-bottom">
-            <h2>5462</h2>
-            <p class="positive"><img class="positive" src="./images/icon-up.svg">2257%</p>
+            <h2 class="dark-mode-title">5462</h2>
+            <div>
+              <img class="positive" src="./images/icon-up.svg">
+              <p class="positive">2257%</p>
+            </div>
           </div>
         </div>
     
@@ -134,8 +151,11 @@
             <img src="./images/icon-instagram.svg">
           </div>
           <div class="overview-bottom">
-            <h2>52k</h2>
-            <p class="positive"><img class="positive" src="./images/icon-up.svg">1375%</p>
+            <h2 class="dark-mode-title">52k</h2>
+            <div>
+              <img class="positive" src="./images/icon-up.svg">
+              <p class="positive">1375%</p>
+            </div>
           </div>
         </div>
     
@@ -145,8 +165,11 @@
             <img src="./images/icon-twitter.svg">
           </div>
           <div class="overview-bottom">
-            <h2>117</h2>
-            <p class="positive"><img class="positive" src="./images/icon-up.svg">303%</p>
+            <h2 class="dark-mode-title">117</h2>
+            <div>
+              <img class="positive" src="./images/icon-up.svg">
+              <p class="positive">303%</p>
+            </div>
           </div>
         </div>
     
@@ -156,8 +179,11 @@
             <img src="./images/icon-twitter.svg">
           </div>
           <div class="overview-bottom">
-            <h2>507</h2>
-            <p class="positive"><img class="positive" src="./images/icon-up.svg">553%</p>
+            <h2 class="dark-mode-title">507</h2>
+            <div>
+              <img class="positive" src="./images/icon-up.svg">
+              <p class="positive">553%</p>
+            </div>
           </div>
         </div>
     
@@ -167,8 +193,11 @@
             <img src="./images/icon-youtube.svg">
           </div>
           <div class="overview-bottom">
-            <h2>107</h2>
-            <p class="negative"><img class="negative" src="./images/icon-down.svg">19%</p>
+            <h2 class="dark-mode-title">107</h2>
+            <div>
+              <img class="negative" src="./images/icon-down.svg">
+              <p class="negative">19%</p>
+            </div>
           </div>
         </div>
     
@@ -178,17 +207,15 @@
             <img src="./images/icon-youtube.svg">
           </div>
           <div class="overview-bottom">
-            <h2>1407</h2>
-            <p class="negative"><img class="negative" src="./images/icon-down.svg">12%</p>
+            <h2 class="dark-mode-title">1407</h2>
+            <div>
+              <img class="negative" src="./images/icon-down.svg">
+              <p class="negative">12%</p>
+            </div>
           </div>
         </div>
       </div>
       </div>
-  </div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
 </html>
